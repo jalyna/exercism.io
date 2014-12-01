@@ -13,6 +13,7 @@ Styleguide Components - Underlined Tabs.
 @import '../variables';
 
 .nav.underlined-tabs {
+  float: right;
   li {
     margin: 0px;
     padding: 0px;
@@ -38,6 +39,19 @@ Styleguide Components - Underlined Tabs.
       color: $gray;
       background: none;
       border-bottom: 3px solid $exercism-red;
+    }
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .nav.underlined-tabs {
+    float: none;
+    li {
+      display: block;
+      margin: 0px;
+    }
+    li a {
+      display: block;
     }
   }
 }

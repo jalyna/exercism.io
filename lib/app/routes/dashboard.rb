@@ -5,7 +5,7 @@ module ExercismWeb
       get '/dashboard' do
         please_login
 
-        erb :"dashboard/index"
+        erb :"dashboard/index", locals: { dashboard: dashboard }
       end
 
       get '/dashboard/teams' do
@@ -18,6 +18,11 @@ module ExercismWeb
         please_login
 
         erb :"dashboard/submissions", locals: { profile: Profile.new(current_user) }
+      end
+
+      private
+      def dashboard
+        ExercismWeb::Presenters::Dashboard.new(current_user)
       end
 
     end

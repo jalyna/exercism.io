@@ -1,8 +1,7 @@
 <article id="dashboard">
   <div class="page-header full-header dashboard-header">
     <div class="container">
-      <h1 class="pull-left">Dashboard</h1>
-      <ul class="nav underlined-tabs pull-right">
+      <ul class="nav underlined-tabs">
         <li class="<%= "active" if current_page == :index %>">
           <a href="/dashboard"><i class="fa fa-dashboard"></i> Activity Stream</a>
         </li>
@@ -14,6 +13,7 @@
           <a href="/dashboard/teams"><i class="fa fa-group"></i> Teams</a>
         </li>
       </ul>
+      <h1 class="hidden-xs">Dashboard</h1>
       <div class="clearfix"></div>
     </div>
   </div>
