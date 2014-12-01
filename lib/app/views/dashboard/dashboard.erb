@@ -8,7 +8,9 @@
         <li class="<%= "active" if current_page == :submissions %>">
           <a href="/dashboard/submissions"><i class="fa fa-graduation-cap"></i> Submissions</a>
         </li>
-        <li><a href="#"><i class="fa fa-comments-o fa-lg"></i> Nitpick</a></li>
+        <li class="<%= "active" if current_page == :nitpicks %>">
+          <a href="/dashboard/nitpicks"><i class="fa fa-comments-o fa-lg"></i> Nitpicks</a>
+        </li>
         <li class="<%= "active" if current_page == :teams %>">
           <a href="/dashboard/teams"><i class="fa fa-group"></i> Teams</a>
         </li>

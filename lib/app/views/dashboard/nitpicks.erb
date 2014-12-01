@@ -1,0 +1,23 @@
+<% content_for :dashboard_content do %>
+  <div class="container">
+    <% if nitpicker_languages.any? %>
+      <br />
+      <ul class="nav nav-stacked nav-bordered">
+        <% nitpicker_languages.each do |language| %>
+          <li>
+            <a href="<%= path_for(language) %>">
+              <%= Language.of(language) || language %>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+    <% else %>
+      <div class="placeholder placeholder-lg">
+        <p class="lead">No nitpicking available</p>
+        <p>Please submit exercises first.</p>
+      </div>
+    <% end %>
+  </div>
+<% end %>
+
+<%= erb :"dashboard/dashboard", locals: { current_page: :nitpicks } %>

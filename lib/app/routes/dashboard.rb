@@ -20,6 +20,12 @@ module ExercismWeb
         erb :"dashboard/submissions", locals: { profile: Profile.new(current_user) }
       end
 
+      get '/dashboard/nitpicks' do
+        please_login
+
+        erb :"dashboard/nitpicks"
+      end
+
       private
       def dashboard
         ExercismWeb::Presenters::Dashboard.new(current_user)
