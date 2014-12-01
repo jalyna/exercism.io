@@ -3,9 +3,11 @@
 
   <div class="container">
     <%= erb :"submissions/alerts", locals: { submission: submission } %>
+  </div>
 
-    <%= erb :"submissions/iterations", locals: { submission: submission } %>
+  <%= erb :"submissions/iterations", locals: { submission: submission } %>
 
+  <div class="container">
     <%= erb :"submissions/iteration", locals: { submission: submission } %>
   </div>
 </article>

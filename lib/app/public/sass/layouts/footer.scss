@@ -3,6 +3,7 @@
 @import '../base/variables';
 
 #footer {
+  border-top: 1px solid darken($gray-lighter, 3%);
   background: lighten($gray-lighter, 3%);
   padding: 30px 0px;
   margin-top: 40px;

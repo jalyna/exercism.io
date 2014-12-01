@@ -41,9 +41,14 @@
   .submission-alerts {
     margin-top: 10px;
   }
+  .submission-iterations-container {
+    border-bottom: 1px solid $gray-lighter;
+  }
   .submission-iterations {
     margin-top: 10px;
+    margin-bottom: -1px;
     .iterations-nav {
+      border-color: $gray-lighter;
       font-size: $font-size-large;
       .badge {
         position: absolute;
