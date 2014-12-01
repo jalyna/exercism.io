@@ -15,7 +15,8 @@
           <a href="/dashboard/teams"><i class="fa fa-group"></i> Teams</a>
         </li>
       </ul>
-      <h1 class="hidden-xs">Dashboard</h1>
+      <% current_page_title ||= nil %>
+      <h1 class="hidden-xs"><%= current_page_title || "Dashboard" %></h1>
       <div class="clearfix"></div>
     </div>
   </div>
