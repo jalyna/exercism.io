@@ -1,21 +1,10 @@
-<article id="dashboard">
-  <div class="page-header full-header dashboard-header">
-    <div class="container">
-      <h1 class="pull-left">Dashboard</h1>
-      <ul class="nav underlined-tabs pull-right">
-        <li class="active"><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-        <li><a href="#"><i class="fa fa-graduation-cap"></i> Submissions</a></li>
-        <li><a href="#"><i class="fa fa-comments-o fa-lg"></i> Nitpick</a></li>
-        <li><a href="#"><i class="fa fa-group"></i> Teams</a></li>
-      </ul>
-      <div class="clearfix"></div>
-    </div>
-  </div>
-
+<% content_for :dashboard_content do %>
   <div class="container">
     <div class="placeholder placeholder-lg">
       <p class="lead">Under Construction</p>
       <p>We are still looking for solutions here. Any idea? Have a look to <a href="https://github.com/exercism/exercism.io/issues/1654">this issue</a>.</p>
     </div>
   </div>
-</article>
+<% end %>
+
+<%= erb :"dashboard/dashboard", locals: { current_page: :index } %>
