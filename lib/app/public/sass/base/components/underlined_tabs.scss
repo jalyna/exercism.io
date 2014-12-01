@@ -1,0 +1,43 @@
+/*
+Tabs with bottom border, should sit in full headers.
+
+<ul class="nav underlined-tabs">
+  <li><a href="#"><i class="fa fa-dashboard fa-lg"></i> Activity Stream</a></li>
+  <li class="active"><a href="#"><i class="fa fa-graduation-cap fa-lg"></i> Submissions</a></li>
+  <li><a href="#"><i class="fa fa-comments-o fa-lg"></i> Nitpick</a></li>
+</ul>
+
+Styleguide Components - Underlined Tabs.
+*/
+@import '../themes/exercism';
+@import '../variables';
+
+.nav.underlined-tabs {
+  li {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    margin-left: -4px;
+    margin-bottom: -11px;
+    a {
+      color: $gray-light;
+      padding: 15px 10px;
+      border-bottom: 1px solid transparent;
+      font-size: $font-size-large;
+      &:hover {
+        background: none;
+        color: $text-color;
+      }
+    }
+    .fa {
+      padding-right: 5px;
+    }
+  }
+  li.active {
+    a {
+      color: $gray;
+      background: none;
+      border-bottom: 3px solid $exercism-red;
+    }
+  }
+}
