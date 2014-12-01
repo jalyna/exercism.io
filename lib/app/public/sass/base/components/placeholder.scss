@@ -1,0 +1,23 @@
+/*
+When we are progressing on a feature or have an empty list, use this one.
+
+<div class="placeholder">
+  <p class="lead">Under Construction</p>
+  <p>We are still looking for solutions here. Any idea? Have a look to <a href="#">this issue</a>.</p>
+</div>
+
+Styleguide Components - Placeholder.
+*/
+@import '../themes/exercism';
+@import '../variables';
+
+.placeholder {
+  margin: 20px 0px;
+  text-align: center;
+  padding: 25px 40px;
+  border: 2px dashed $gray-lighter;
+  color: $gray-light;
+  &.placeholder-lg {
+    padding: 150px 40px;
+  }
+}
