@@ -1,0 +1,13 @@
+@import '../themes/exercism';
+@import '../variables';
+
+.page-header.full-header {
+  margin: 0px;
+  padding: 10px 0px;
+  background: lighten($gray-lighter, 3%);
+  border-bottom: 1px solid darken($gray-lighter, 3%);
+  h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}

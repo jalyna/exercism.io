@@ -1,9 +1,11 @@
-<div class="container" id="submission">
+<article id="submission">
   <%= erb :"submissions/header", locals: { submission: submission, next_submission: next_submission } %>
 
-  <%= erb :"submissions/alerts", locals: { submission: submission } %>
+  <div class="container">
+    <%= erb :"submissions/alerts", locals: { submission: submission } %>
 
-  <%= erb :"submissions/iterations", locals: { submission: submission } %>
+    <%= erb :"submissions/iterations", locals: { submission: submission } %>
 
-  <%= erb :"submissions/iteration", locals: { submission: submission } %>
-</div>
+    <%= erb :"submissions/iteration", locals: { submission: submission } %>
+  </div>
+</article>

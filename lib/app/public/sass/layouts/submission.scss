@@ -6,10 +6,6 @@
 #submission {
   .submission-header {
     @include clearfix;
-    margin-bottom: 0px;
-    h1 {
-      margin-top: 0px;
-    }
     .submission-language {
       float: left;
       margin-right: 10px;

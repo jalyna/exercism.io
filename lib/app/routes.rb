@@ -20,6 +20,7 @@ module ExercismWeb
       Exercises: 'exercises',
       Metadata: 'metadata',
       Teams: 'teams',
+      Dashboard: 'dashboard',
       Styleguide: 'styleguide',
       User: 'user',
       Errors: 'errors',

@@ -51,6 +51,7 @@ module ExercismWeb
     use Routes::Comments
     use Routes::Nits
     use Routes::Teams
+    use Routes::Dashboard
     use Routes::Styleguide
     use Routes::User
     use Routes::Errors
